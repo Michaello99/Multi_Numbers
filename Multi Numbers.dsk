@@ -16,29 +16,33 @@ File_13=TSourceModule,'C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi
 File_14=TSourceModule,'C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Note odzysk\Unit7.cpp',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp
-Module1=default.htm
-Module2=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp
-Module3=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit2.cpp
+Module0=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp
+Module1=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit7.cpp
+Module2=default.htm
+Module3=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp
 Module4=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit5.cpp
-Module5=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit4.cpp
-Module6=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit3.cpp
-Count=7
+Module5=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit2.cpp
+Module6=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit4.cpp
+Module7=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit3.cpp
+Count=8
 EditWindowCount=1
 
-[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp]
+[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp]
+ModuleType=TSourceModule
+
+[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit7.cpp]
 ModuleType=TSourceModule
 
 [default.htm]
 ModuleType=TURLModule
 
-[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp]
-ModuleType=TSourceModule
-
-[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit2.cpp]
+[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp]
 ModuleType=TSourceModule
 
 [C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit5.cpp]
+ModuleType=TSourceModule
+
+[C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit2.cpp]
 ModuleType=TSourceModule
 
 [C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit4.cpp]
@@ -48,8 +52,8 @@ ModuleType=TSourceModule
 ModuleType=TSourceModule
 
 [EditWindow0]
-ViewCount=7
-CurrentEditView=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp
+ViewCount=8
+CurrentEditView=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp
 View0=0
 View1=1
 View2=2
@@ -57,6 +61,7 @@ View3=3
 View4=4
 View5=5
 View6=6
+View7=7
 PercentageSizes=1
 Create=1
 Visible=1
@@ -93,13 +98,13 @@ WelcomePageURL=bds:/default.htm
 [View1]
 CustomEditViewType=TEditView
 Module=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp
-CursorX=21
-CursorY=29
-TopLine=13
+CursorX=16
+CursorY=14
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit1.cpp
+EditViewName=Borland.FormDesignerView
 
 [View2]
 CustomEditViewType=TEditView
@@ -138,19 +143,30 @@ EditViewName=Borland.FormDesignerView
 CustomEditViewType=TEditView
 Module=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit5.cpp
 CursorX=1
-CursorY=1
-TopLine=1
+CursorY=31
+TopLine=25
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit5.cpp
 
 [View6]
 CustomEditViewType=TEditView
 Module=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp
-CursorX=39
-CursorY=47
-TopLine=22
+CursorX=23
+CursorY=53
+TopLine=34
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit6.cpp
+
+[View7]
+CustomEditViewType=TEditView
+Module=C:\Users\micha\Desktop\Moje pliki\Moje programy C++\Multi Numbers Nowy\Unit7.cpp
+CursorX=19
+CursorY=5
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -291,8 +307,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,
-ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,CustomTitleBar=0
+SelectedItem=Name,
+ExpandedItems=Constraints=0,Font=0,HorzScrollBar=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Padding=0,StyleElements=0,Touch=0,VertScrollBar=0
 
 [frmDesignPreview]
 PercentageSizes=1

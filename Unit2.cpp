@@ -30,7 +30,7 @@ p=(-bk)/(2*ak);     //wspó³rzêdne wiercho³ka paraboli
 q=(-delta)/(4*ab);
 Edit9->Text=p;
 Edit10->Text=q;
-Edit7->Text="(0,"+c+")";
+Edit7->Text="(0;"+c+")";
 Edit4->Text=delta;
 if(ak>0)
 {

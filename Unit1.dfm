@@ -166,6 +166,19 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object Label12: TLabel
+    Left = 360
+    Top = 324
+    Width = 284
+    Height = 17
+    Caption = 'Zamiast przecinka wpisuj kropk'#281' z klawiatury!'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 18
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Edit1: TEdit
     Left = 8
     Top = 111
@@ -333,7 +346,7 @@ object Form1: TForm1
     Left = 385
     Top = 83
     Width = 247
-    Height = 295
+    Height = 219
     VertScrollBar.Smooth = True
     BevelInner = bvNone
     BevelOuter = bvNone
@@ -398,6 +411,21 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 3
       OnClick = Button10Click
+    end
+    object Button13: TButton
+      Left = 24
+      Top = 170
+      Width = 193
+      Height = 33
+      Caption = 'Trygonometria'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnClick = Button13Click
     end
   end
   object MainMenu1: TMainMenu

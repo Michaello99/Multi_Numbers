@@ -5,7 +5,7 @@ object Form5: TForm5
   BorderStyle = bsSingle
   Caption = 'Maszyna logarytm'#243'w'
   ClientHeight = 262
-  ClientWidth = 543
+  ClientWidth = 512
   Color = clBtnFace
   UseDockManager = True
   DockSite = True

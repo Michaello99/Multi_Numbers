@@ -11,6 +11,7 @@
 #include "Unit4.h"
 #include "Unit5.h"
 #include "Unit6.h"
+#include "Unit7.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -151,6 +152,12 @@ Form5->Show();
 void __fastcall TForm1::Button10Click(TObject *Sender)
 {
 Form6->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button13Click(TObject *Sender)
+{
+Form7->Show();
 }
 //---------------------------------------------------------------------------
 

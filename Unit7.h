@@ -22,6 +22,7 @@ __published:	// IDE-managed Components
 	TLabel *Label3;
 	TLabel *Label4;
 	TLabel *Label5;
+	TLabel *Label14;
 	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 void __fastcall CreateParams(TCreateParams &Params);

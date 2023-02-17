@@ -167,7 +167,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label12: TLabel
-    Left = 360
+    Left = 358
     Top = 324
     Width = 284
     Height = 17

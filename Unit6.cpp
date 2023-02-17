@@ -64,16 +64,44 @@ void __fastcall TForm6::Button1Click(TObject *Sender)
 	else if(RadioButton5->Checked)
 	{
 	 to_convert_text=Edit1->Text;
-	 to_convert=atof(to_convert_text.c_str());   //kilometrynametry
-	 converted = to_convert*1000;
+	 to_convert=atof(to_convert_text.c_str());   //kilometrynamile
+	 converted = to_convert/1.61;
 	 Edit2->Text = converted;
 	}
 	else if(RadioButton6->Checked)
 	{
 	 to_convert_text=Edit1->Text;
-	 to_convert=atof(to_convert_text.c_str());   //metrynakilometry
-	 converted = to_convert/1000;
+	 to_convert=atof(to_convert_text.c_str());   //milenakilometry
+	 converted = to_convert*1.61;
 	 Edit2->Text = converted;
+	}
+	else if(RadioButton7->Checked)
+	{
+	to_convert_text=Edit1->Text;
+	to_convert=atof(to_convert_text.c_str());      //celsjusznafahrenheit
+	converted = ((to_convert*1.8)+32);
+	Edit2->Text = converted;
+	}
+	else if(RadioButton8->Checked)
+	{
+	to_convert_text=Edit1->Text;
+	to_convert=atof(to_convert_text.c_str());        //fahrenheitnacelsjusz
+	converted = ((to_convert-32)/1.8);
+    Edit2->Text = converted;
+	}
+	else if(RadioButton9->Checked)
+	{
+	to_convert_text=Edit1->Text;
+	to_convert=atof(to_convert_text.c_str());
+	converted = to_convert*2.204;
+	Edit2->Text = converted;
+	}
+	else if(RadioButton10->Checked)
+	{
+    to_convert_text=Edit1->Text;
+	to_convert=atof(to_convert_text.c_str());
+    converted = to_convert*0.4535;
+	Edit2->Text = converted;
     }
 
 }
@@ -101,14 +129,56 @@ Label2->Caption = "Metry:";
 void __fastcall TForm6::RadioButton5Click(TObject *Sender)
 {
 Label1->Caption = "Kilometry:";
-Label2->Caption = "Metry:";
+Label2->Caption = "Mile:";
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm6::RadioButton6Click(TObject *Sender)
 {
-Label1->Caption = "Metry:";
+Label1->Caption = "Mile:";
 Label2->Caption = "Kilometry:";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm6::RadioButton7Click(TObject *Sender)
+{
+Label1->Caption = "Stopnie Celsjusza:";
+Label2->Caption = "Stopnie Fahrenheita:";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm6::RadioButton8Click(TObject *Sender)
+{
+Label1->Caption = "Stopnie Fahrenheita:";
+Label2->Caption = "Stopnie Celsjusza:";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm6::RadioButton9Click(TObject *Sender)
+{
+Label1->Caption = "Kilogramy";
+Label2->Caption = "Funty";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm6::RadioButton10Click(TObject *Sender)
+{
+Label1->Caption = "Funty";
+Label2->Caption = "Kilogramy";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm6::ScrollBox1MouseWheelDown(TObject *Sender, TShiftState Shift,
+          TPoint &MousePos, bool &Handled)
+{
+ScrollBox1->VertScrollBar->Position+=10;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm6::ScrollBox1MouseWheelUp(TObject *Sender, TShiftState Shift,
+          TPoint &MousePos, bool &Handled)
+{
+ScrollBox1->VertScrollBar->Position-=10;
 }
 //---------------------------------------------------------------------------
 

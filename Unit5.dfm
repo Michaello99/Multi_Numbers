@@ -85,6 +85,19 @@ object Form5: TForm5
     ParentFont = False
     OnClick = Label5Click
   end
+  object Label14: TLabel
+    Left = 288
+    Top = 226
+    Width = 205
+    Height = 17
+    Caption = 'Zamiast przecinka wpisuj kropk'#281'!'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 18
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Edit1: TEdit
     Left = 8
     Top = 37

@@ -4,7 +4,7 @@ object Form6: TForm6
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Konwerter'
-  ClientHeight = 351
+  ClientHeight = 365
   ClientWidth = 480
   Color = clBtnFace
   UseDockManager = True
@@ -20,7 +20,7 @@ object Form6: TForm6
   TextHeight = 13
   object Label1: TLabel
     Left = 8
-    Top = 16
+    Top = 33
     Width = 70
     Height = 25
     Caption = 'Stopnie:'
@@ -33,7 +33,7 @@ object Form6: TForm6
   end
   object Label2: TLabel
     Left = 8
-    Top = 94
+    Top = 109
     Width = 74
     Height = 25
     Caption = 'Radiany:'
@@ -52,7 +52,7 @@ object Form6: TForm6
   end
   object Label4: TLabel
     Left = 8
-    Top = 211
+    Top = 225
     Width = 156
     Height = 25
     Caption = 'Przydatne porady:'
@@ -63,9 +63,35 @@ object Form6: TForm6
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object Label12: TLabel
+    Left = 272
+    Top = 33
+    Width = 130
+    Height = 25
+    Caption = 'Tryb konwersji:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 25
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 8
+    Top = 8
+    Width = 205
+    Height = 17
+    Caption = 'Zamiast przecinka wpisuj kropk'#281'!'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 18
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Edit1: TEdit
     Left = 8
-    Top = 47
+    Top = 64
     Width = 237
     Height = 28
     AutoSize = False
@@ -79,7 +105,7 @@ object Form6: TForm6
   end
   object Edit2: TEdit
     Left = 8
-    Top = 125
+    Top = 140
     Width = 237
     Height = 28
     AutoSize = False
@@ -94,14 +120,18 @@ object Form6: TForm6
   end
   object ScrollBox1: TScrollBox
     Left = 272
-    Top = 8
-    Width = 185
-    Height = 189
+    Top = 64
+    Width = 200
+    Height = 145
+    VertScrollBar.Smooth = True
+    VertScrollBar.Tracking = True
     BorderStyle = bsNone
     TabOrder = 2
+    OnMouseWheelDown = ScrollBox1MouseWheelDown
+    OnMouseWheelUp = ScrollBox1MouseWheelUp
     object RadioButton1: TRadioButton
-      Left = 19
-      Top = 13
+      Left = 3
+      Top = 5
       Width = 145
       Height = 17
       Caption = 'Stopnie na radiany'
@@ -117,8 +147,8 @@ object Form6: TForm6
       OnClick = RadioButton1Click
     end
     object RadioButton2: TRadioButton
-      Left = 19
-      Top = 36
+      Left = 3
+      Top = 28
       Width = 145
       Height = 17
       Caption = 'Radiany na stopnie'
@@ -132,8 +162,8 @@ object Form6: TForm6
       OnClick = RadioButton2Click
     end
     object RadioButton3: TRadioButton
-      Left = 19
-      Top = 59
+      Left = 3
+      Top = 51
       Width = 150
       Height = 17
       Caption = 'Metry na centymetry'
@@ -147,8 +177,8 @@ object Form6: TForm6
       OnClick = RadioButton3Click
     end
     object RadioButton4: TRadioButton
-      Left = 19
-      Top = 82
+      Left = 3
+      Top = 74
       Width = 150
       Height = 17
       Caption = 'Centymetry na metry'
@@ -162,11 +192,11 @@ object Form6: TForm6
       OnClick = RadioButton4Click
     end
     object RadioButton5: TRadioButton
-      Left = 19
-      Top = 105
+      Left = 3
+      Top = 97
       Width = 150
       Height = 17
-      Caption = 'Kilometry na metry'
+      Caption = 'Kilometry na mile'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = 19
@@ -177,11 +207,11 @@ object Form6: TForm6
       OnClick = RadioButton5Click
     end
     object RadioButton6: TRadioButton
-      Left = 19
-      Top = 128
+      Left = 3
+      Top = 120
       Width = 150
       Height = 17
-      Caption = 'Metry na kilometry'
+      Caption = 'Mile na kilometry'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = 19
@@ -191,10 +221,70 @@ object Form6: TForm6
       TabOrder = 5
       OnClick = RadioButton6Click
     end
+    object RadioButton7: TRadioButton
+      Left = 3
+      Top = 143
+      Width = 163
+      Height = 17
+      Caption = 'Celsjusz na Fahrenheit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      OnClick = RadioButton7Click
+    end
+    object RadioButton8: TRadioButton
+      Left = 3
+      Top = 166
+      Width = 163
+      Height = 17
+      Caption = 'Fahrenheit na Celsjusz'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+      OnClick = RadioButton8Click
+    end
+    object RadioButton9: TRadioButton
+      Left = 3
+      Top = 189
+      Width = 163
+      Height = 17
+      Caption = 'Kilogramy na funty'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+      OnClick = RadioButton9Click
+    end
+    object RadioButton10: TRadioButton
+      Left = 3
+      Top = 212
+      Width = 163
+      Height = 17
+      Caption = 'Funty na kilogramy'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+      OnClick = RadioButton10Click
+    end
   end
   object Button1: TButton
     Left = 8
-    Top = 164
+    Top = 174
     Width = 237
     Height = 33
     Caption = 'Konwertuj'
@@ -209,7 +299,7 @@ object Form6: TForm6
   end
   object ScrollBox2: TScrollBox
     Left = 8
-    Top = 242
+    Top = 256
     Width = 464
     Height = 101
     BorderStyle = bsNone
@@ -268,10 +358,10 @@ object Form6: TForm6
     end
     object Label9: TLabel
       Left = 235
-      Top = 3
-      Width = 180
+      Top = 43
+      Width = 146
       Height = 20
-      Caption = '1 kilogram = 1000 gram'#243'w'
+      Caption = '1 kilogram = 2.2 funta'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = 20
@@ -292,12 +382,25 @@ object Form6: TForm6
       Font.Style = []
       ParentFont = False
     end
+    object Label13: TLabel
+      Left = 235
+      Top = 3
+      Width = 180
+      Height = 20
+      Caption = '1 kilogram = 1000 gram'#243'w'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+    end
     object Label11: TLabel
       Left = 235
-      Top = 43
-      Width = 181
+      Top = 63
+      Width = 154
       Height = 20
-      Caption = '1 gram = 1000 miligram'#243'w'
+      Caption = '1 funt = 0.45 kilograma'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = 20

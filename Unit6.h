@@ -35,7 +35,14 @@ __published:	// IDE-managed Components
 	TLabel *Label8;
 	TLabel *Label9;
 	TLabel *Label10;
+	TRadioButton *RadioButton7;
+	TRadioButton *RadioButton8;
+	TLabel *Label12;
+	TRadioButton *RadioButton9;
+	TRadioButton *RadioButton10;
+	TLabel *Label13;
 	TLabel *Label11;
+	TLabel *Label14;
 	void __fastcall RadioButton1Click(TObject *Sender);
 	void __fastcall RadioButton2Click(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
@@ -43,6 +50,14 @@ __published:	// IDE-managed Components
 	void __fastcall RadioButton4Click(TObject *Sender);
 	void __fastcall RadioButton5Click(TObject *Sender);
 	void __fastcall RadioButton6Click(TObject *Sender);
+	void __fastcall RadioButton7Click(TObject *Sender);
+	void __fastcall RadioButton8Click(TObject *Sender);
+	void __fastcall RadioButton9Click(TObject *Sender);
+	void __fastcall RadioButton10Click(TObject *Sender);
+	void __fastcall ScrollBox1MouseWheelDown(TObject *Sender, TShiftState Shift, TPoint &MousePos,
+          bool &Handled);
+	void __fastcall ScrollBox1MouseWheelUp(TObject *Sender, TShiftState Shift, TPoint &MousePos,
+          bool &Handled);
 private:	// User declarations
 void __fastcall CreateParams(TCreateParams &Params);
 public:		// User declarations

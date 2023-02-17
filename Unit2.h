@@ -42,6 +42,7 @@ __published:	// IDE-managed Components
 	TPanel *Panel1;
 	TLabel *Label15;
 	TLabel *Label16;
+	TLabel *Label17;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Label15Click(TObject *Sender);
 	void __fastcall Label16Click(TObject *Sender);

@@ -22,6 +22,7 @@ __published:	// IDE-managed Components
 	TEdit *Edit3;
 	TLabel *Label4;
 	TLabel *Label5;
+	TLabel *Label14;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Label5Click(TObject *Sender);
 private:	// User declarations

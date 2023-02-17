@@ -1,8 +1,9 @@
 object Form7: TForm7
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Maszyna trygonometryczna'
-  ClientHeight = 226
+  ClientHeight = 248
   ClientWidth = 447
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -76,6 +77,19 @@ object Form7: TForm7
     Font.Height = 20
     Font.Name = 'Segoe UI'
     Font.Style = []
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 119
+    Top = 223
+    Width = 205
+    Height = 17
+    Caption = 'Zamiast przecinka wpisuj kropk'#281'!'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 18
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
     ParentFont = False
   end
   object Edit1: TEdit
